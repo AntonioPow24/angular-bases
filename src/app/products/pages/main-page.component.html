@@ -1,0 +1,15 @@
+<h1>ESTE ES LA SECCION DE PRODUCTO</h1>
+<hr>
+
+
+
+<div class="row formContainer">
+  <div class="col">
+    <products-list [productList]="products" (onDeleteProduct2)="onDeleteProduct($event)" />
+
+  </div>
+
+  <div class="col">
+    <products-add-product (onNewProduct)="onNewProduct($event)"/>
+  </div>
+</div>
